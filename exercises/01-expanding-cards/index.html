@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/styles.css" rel="stylesheet">
+    <title>Expanding Cards</title>
+</head>
+<body class="bg-blue-950 text-white h-screen overflow-y-hidden overflow-x-hidden">
+    <header class="flex justify-between text-2xl w-screen px-28 pt-10 h-[10%] max-[480px]:px-8 max-[480px]:sticky max-[480px]:bg-slate-700 max-[480px]:pt-0 max-[480px]:items-center max-[480px]:mb-3 max-[480px]:bg-opacity-50 max-[480px]:text-sm">
+        <h1>Expanding Cards</h1>
+        <a href="/dist/index.html">Home</a>
+    </header>
+
+    <section id="container" class="flex h-[85%] gap-5 justify-center w-[90%] m-auto ">
+        
+        <div class="panel active w-[5%]">
+            <img src="https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="img1" class="rounded-[50px] object-cover h-full w-full">
+            <h2 class="header active opacity-100 absolute bottom-[7%] ml-8 text-2xl font-bold max-[480px]:text-xl">Explore The World</h2>
+        </div>
+
+        <div class="panel w-[5%]">
+            <img src="https://images.unsplash.com/photo-1572276596237-5db2c3e16c5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="img2" class="rounded-[50px] object-cover w-full h-full ">
+            <h2 class="header opacity-0 max-[480px]:text-xl">Wild Forest</h2>
+        </div>
+
+        <div class="panel w-[5%]">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80" alt="img3" class="rounded-[50px] object-cover w-full h-full">
+            <h2 class="header opacity-0 max-[480px]:text-xl">Sunny Beach</h2>
+        </div>
+
+        <div class="panel w-[5%] max-[480px]:hidden">
+            <img src="https://images.unsplash.com/photo-1551009175-8a68da93d5f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80" alt="img4" class="rounded-[50px] object-cover w-full h-full">
+            <h2 class="header opacity-0 max-[480px]:text-xl">City on Winter</h2>
+        </div>
+
+        <div class="panel w-[5%] max-[480px]:hidden">
+            <img src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="img5" class="rounded-[50px] object-cover w-full h-full max-[480px]:text-xl">
+            <h2 class="header opacity-0">Mountains - Clouds</h2>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
