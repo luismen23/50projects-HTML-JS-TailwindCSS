@@ -12,5 +12,24 @@
         <h1>Progress Steps</h1>
         <a href="/dist/index.html">Home</a>
     </header>
+    <main class="h-[90%]">
+        <div class="flex justify-center items-end h-[40%] text-3xl ">
+            <div class="relative w-[800px]">
+                <div class="w-0 h-[6px] bg-gray-400 absolute -z-10 top-[45%] transition-all duration-700" id="progress"></div>
+                <div class="w-[790px] h-[6px] bg-gray-400 absolute -z-20 top-[45%] transition-all duration-700"></div>
+                <ul class="flex w-full justify-between">
+                    <li class="border-[6px] border-white w-16 h-16 justify-center flex items-center rounded-[50%] bg-blue-700 circle active transition-all duration-700">1</li>
+                    <li class="border-[6px] border-gray-400 w-16 h-16 justify-center flex items-center rounded-[50%] bg-blue-700 circle transition-all duration-700">2</li>
+                    <li class="border-[6px] border-gray-400 w-16 h-16 justify-center flex items-center rounded-[50%] bg-blue-700 circle transition-all duration-700">3</li>
+                    <li class="border-[6px] border-gray-400 w-16 h-16 justify-center flex items-center rounded-[50%] bg-blue-700 circle transition-all duration-700">4</li>
+                </ul>
+            </div>
+        </div>
+        <div class="mt-14 flex justify-center space-x-10 text-xl">
+            <button class="w-32 h-12 rounded-lg bg-blue-300 text-white font-semibold" id="prev">Prev</button>
+            <button class="w-32 h-12 rounded-lg bg-blue-700 text-white font-semibold" id="next">Next</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
