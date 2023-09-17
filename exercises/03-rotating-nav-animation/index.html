@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/styles.css" rel="stylesheet">
+    <title>Rotating Nav Animation</title>
+</head>
+<body class="overflow-y-hidden overflow-x-hidden">
+    
+    <!-- Buttons on top-left -->
+    <div>
+        <!-- Open Menu Button -->
+        <button class="absolute z-40 top-0 ml-4 mt-4 menu">
+            <img src="../03-rotating-nav-animation/imgs/menu.svg"  alt="menu">
+        </button>
+    
+        <!-- Close Menu Button -->
+        <button class="absolute z-30 top-0 ml-4 mt-4 hidden close">
+            <img src="../03-rotating-nav-animation/imgs/close.svg"  alt="menu">
+        </button>
+    
+        <!-- circle -->
+        <div class="bg-red-400 w-36 h-36 fixed z-20 rounded-full -top-14 -left-14">
+        </div>
+    </div>
+
+    <!-- Container -->
+    <section class="bg-slate-400 h-screen w-screen relative text-white flex justify-center z-10 firstPage transition-transform duration-1000">
+
+        <div class="w-[800px] mt-[10%]">
+            <h1 class="text-3xl font-bold">Rotating Nav Animation</h1>
+            <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quia aspernatur tenetur ratione est. Eligendi soluta excepturi et expedita iusto ea repellat, nesciunt velit veritatis adipisci, alias vitae laborum maiores nobis nulla sapiente incidunt esse reiciendis? Recusandae, neque? Quae cumque ab, tempora illum quis corporis quo inventore, sequi ex voluptatum esse saepe eligendi in voluptas vel unde! Magni modi dolore et suscipit quo vel quis nostrum enim voluptates labore numquam quibusdam, eum, nam ipsa at quasi? Laborum sunt nisi molestiae!</p>
+
+            <h2 class="text-xl my-4 font-semibold">Rengoku's the best</h2>
+            <img src="../03-rotating-nav-animation/imgs/rengoku.png" alt="rengoku picture">
+
+            <p class="mt-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem non eaque in cumque repellat illum exercitationem sequi quos quod. Soluta ratione optio mollitia veniam veritatis ad perferendis illo omnis suscipit beatae sit ipsa officiis illum dolorum reprehenderit, dicta obcaecati quibusdam voluptas odit modi nemo. Nesciunt, nihil delectus. Esse, possimus ab.</p>
+        </div>
+    </section>
+    
+    <!-- Nav -->
+    <section class="bg-slate-800 h-screen w-screen text-white z-0 absolute top-0">
+        <div class="absolute bottom-0 flex flex-col mb-20 mx-5 gap-5 nav transition-transform">
+            <a href="/dist/index.html" class="-translate-x-[200%] duration-500 ease-in text-2xl flex gap-3"><img src="../03-rotating-nav-animation/imgs/home.svg" alt="">HOME</a>
+            <a href="/dist/index.html" class="ml-[15px] -translate-x-[200%] duration-500 ease-in text-2xl flex gap-3"><img src="../03-rotating-nav-animation/imgs/about.svg" alt="">ABOUT</a>
+            <a href="/dist/index.html" class="ml-[30px] -translate-x-[200%] duration-500 ease-in text-2xl flex gap-3"><img src="../03-rotating-nav-animation/imgs/contact.svg" alt="">CONTACT</a>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

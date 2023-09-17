@@ -17,7 +17,6 @@ next.addEventListener('click', () => {
         changeWidth = 600
     } 
     update()
-    console.log(changeWidth)
 })
 
 prev.addEventListener('click', () => {
@@ -30,7 +29,6 @@ prev.addEventListener('click', () => {
         changeWidth = 0
     } 
     update()
-    console.log(changeWidth)
 })
 
 function update() {
@@ -45,7 +43,7 @@ function update() {
     })
 
     const actives = document.querySelectorAll('.active')
-    // progress.style.width = (actives.length - 1) / (circles.length - 1) * 100 + '%'
+    
     if (changeWidth === 0) {
         progress.classList.add('w-0')
         progress.classList.remove('w-[266.67px]')
