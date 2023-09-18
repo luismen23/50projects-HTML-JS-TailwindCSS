@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/styles.css" rel="stylesheet">
+    <title>Hidden Search Widget</title>
+</head>
+<body class="bg-blue-950 text-white h-screen overflow-y-hidden overflow-x-hidden">
+    <!-- Main Nav -->
+    <header class="flex justify-between text-2xl w-screen px-28 pt-10 h-[10%] max-[480px]:px-8 max-[480px]:sticky max-[480px]:bg-slate-700 max-[480px]:pt-0 max-[480px]:items-center max-[480px]:mb-3 max-[480px]:bg-opacity-50 max-[480px]:text-sm">
+        <h1>Hidden Search</h1>
+        <a href="/dist/index.html">Home</a>
+    </header>
+
+    <!-- Container -->
+    <section class="flex justify-center h-[80%] items-center my-auto">
+        <input type="text" class="input h-14 outline-none p-3 text-xl text-black w-[32px] transition-all duration-300" placeholder="Search ...">
+        <button class="button absolute transition-transform duration-300">
+            <img src="../04-hidden-search-widget/search.svg" alt="btn" class="bg-white h-14">
+        </button>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
